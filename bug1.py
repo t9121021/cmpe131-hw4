@@ -29,12 +29,11 @@ class Circle(Base):
                 if abs(distance - self.size) < 0.5:
                     grid[row][col] = ','
         
-        result = '\n'.join(''.join(row) for row in grid)
-        return result
+        return '\n'.join(''.join(row) for row in grid)
 
 def main():
     c = Circle(1, 2, 3)
-    print(c.shape())
+    print(c)
     print(c.draw())
 
 main()
