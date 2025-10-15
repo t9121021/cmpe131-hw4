@@ -13,7 +13,8 @@ class Circle(Base):
 
     def draw(self):
         header = f"({self.x}, {self.y})\n{self.size}"
-        art_lines = [
+        pad = "        "
+        art = [
             ", - ~ ~ ~ - ,",
             ", ' ' ,",
             ", ,",
@@ -23,9 +24,9 @@ class Circle(Base):
             ", ,",
             ", ,",
             ", , '",
-            "' - , _ _ _ , '"
+            "' - , _ _ _ , '",
         ]
-        return header + "\n" + "\n".join(art_lines)
+        return header + "\n" + "\n".join(pad + line for line in art)
 
 def main():
     c = Circle(1,2,3)
