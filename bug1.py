@@ -12,24 +12,20 @@ class Circle(Base):
         return "This is a circle"
 
     def draw(self):
-        return f"""
-({self.x}, {self.y})\n{self.size}
-, - ~ ~ ~ - ,
-
-, ' ' ,
-, ,
-
-, ,
-, ,
-, ,
-, ,
-, ,
-, ,
-
-, , '
-' - , _ _ _ , '
-
-"""
+        header = f"({self.x}, {self.y})\n{self.size}"
+        art_lines = [
+            ", - ~ ~ ~ - ,",
+            ", ' ' ,",
+            ", ,",
+            ", ,",
+            ", ,",
+            ", ,",
+            ", ,",
+            ", ,",
+            ", , '",
+            "' - , _ _ _ , '"
+        ]
+        return header + "\n" + "\n".join(art_lines)
 
 def main():
     c = Circle(1,2,3)
