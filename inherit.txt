@@ -1,0 +1,2 @@
+1. To reuse code by allowing new classes to inherit existing attributes and methods from a base class.
+2. To improve organization by grouping shared behavior into a parent class and extending it in specialized subclasses.

@@ -1,0 +1,3 @@
+1. No, increment_int_a does not change 'a' because integers are immutable and only a copy is modified inside the function.
+2. Yes, increment_int_b changes 'b' because dictionaries are mutable and the original object is modified.
+3. They differ because integers create a new object when changed, while dictionaries allow in-place modification.
